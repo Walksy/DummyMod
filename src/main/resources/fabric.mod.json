@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "clientkits",
+	"version": "${version}",
+	"name": "Client Kits",
+	"description": "Allows you to store and reload custom saved kits.",
+	"authors": [
+		"Walksy"
+	],
+	"contact": {
+
+	},
+	"license": "MIT",
+	"icon": "assets/walksy/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+          "walksy.customkits.main.ClientKitsMod"
+		]
+	},
+	"mixins": [
+    "clientkits.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
