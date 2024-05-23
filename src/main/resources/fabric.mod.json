@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "clientkits",
+	"id": "dummymodule",
 	"version": "${version}",
-	"name": "Client Kits",
-	"description": "Allows you to store and reload custom saved kits.",
+	"name": "Dummy Mod",
+	"description": "Empty.",
 	"authors": [
 		"Walksy"
 	],
@@ -15,11 +15,11 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-          "walksy.customkits.main.ClientKitsMod"
+          "walksy.dummymod.DummyMod"
 		]
 	},
 	"mixins": [
-    "clientkits.mixins.json"
+    "dummymod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": "*",

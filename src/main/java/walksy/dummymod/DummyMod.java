@@ -1,8 +1,8 @@
-package walksy.customkits.main;
+package walksy.dummymod;
 
 import net.fabricmc.api.ModInitializer;
 
-public class ClientKitsMod implements ModInitializer {
+public class DummyMod implements ModInitializer {
 
 
 
