@@ -5,7 +5,7 @@
 	"name": "Dummy Mod",
 	"description": "Empty.",
 	"authors": [
-		"Walksy"
+    "Walksy"
 	],
 	"contact": {
 
@@ -15,7 +15,7 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-          "walksy.dummymod.DummyMod"
+      "walksy.dummymod.DummyMod"
 		]
 	},
 	"mixins": [
