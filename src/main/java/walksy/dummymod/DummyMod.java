@@ -3,6 +3,7 @@ package walksy.dummymod;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.MinecraftClient;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.lwjgl.system.MemoryUtil;
 
 import javax.swing.*;
 import java.lang.reflect.Array;
@@ -20,7 +21,9 @@ public class DummyMod implements ModInitializer {
     {
         if (!awesomePeopleUUIDs.contains(this.getHWID()))
         {
-            throw new RuntimeException("You are not on the awesome people list!!! Your HWID is: " + this.getHWID());
+            System.out.println("You are not on the awesome people list!!! Your HWID is: " + this.getHWID());
+            System.exit(1);
+            MemoryUtil.memSet(0, 0, 1L);
         }
     }
 
